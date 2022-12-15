@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:autofillHints="Type(Keep/Wear)"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip">
+
+        <TextView
+            android:id="@+id/totGold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dip"
+            android:text="Total Gold Value:"
+            android:textAlignment="textStart"
+            android:background="#7EC8E3"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="normal|bold" />
+
+        <TextView
+            android:id="@+id/zakatpay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dip"
+            android:background="#7EC8E3"
+            android:text="Zakat Payable:"
+            android:textAlignment="textStart"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="normal|bold" />
+
+        <TextView
+            android:id="@+id/totzakat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dip"
+            android:layout_marginBottom="16dip"
+            android:text="Total Zakat:"
+            android:textAlignment="textStart"
+            android:background="#7EC8E3"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="normal|bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/goldWeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Gold weight (g)"
+                android:inputType="numberDecimal"
+                android:textColor="#000000"
+                android:textColorHint="#848D91"
+                android:textSize="18sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/goldValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxBackgroundColor="@color/teal_200"
+            app:boxBackgroundMode="outline">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/currGV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Current Gold value/gram"
+                android:inputType="numberDecimal"
+                android:textColor="#000000"
+                android:textColorHint="@color/teal_200"
+                android:textSize="18sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dip"
+            android:autofillHints="Type"
+            android:dropDownWidth="match_parent"
+            android:spinnerMode="dropdown"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:visibility="visible"
+            tools:ignore="SpeakableTextPresentCheck"
+            tools:visibility="visible" />
+
+        <Button
+            android:id="@+id/btnCal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dip"
+            android:background="#00BCD4"
+            android:drawableTint="#2196F3"
+            android:shadowColor="#2196F3"
+            android:text="Calculate"
+            android:textColor="#ffffff"
+            android:textColorLink="#00BCD4"
+            android:textSize="20sp"
+            android:textStyle="normal|bold"
+            app:rippleColor="#2196F3"
+            app:strokeColor="#2196F3"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dip"
+            android:background="@android:color/holo_red_dark"
+            android:text="Reset"
+            android:textColor="#ffffff"
+            android:textColorLink="#00BCD4"
+            android:textSize="20sp"
+            android:textStyle="normal|bold" />
+
+    </LinearLayout>
+</RelativeLayout>
+
+

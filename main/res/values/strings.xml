@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ZAKAT GOLD CALCULATOR</string>
+    <string-array name="status">
+        <item>Keep</item>
+        <item>Wear</item>
+
+    </string-array>
+    <string name = "Copyright">Copyright © 2022 mujahidahcode</string>
+    <string name = "About_text"><a href= "" > Source Code</a></string>
+    <string name = "Developer">NAME: HALIMATUN SADIAH</string>
+    <string name = "Program">PROGRAM CODE: CS240</string>
+    <string name = "Group">GROUP: RCS2405A</string>
+</resources>
